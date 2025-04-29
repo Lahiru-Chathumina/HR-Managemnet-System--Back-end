@@ -12,6 +12,10 @@ import java.util.List;
 @RequiredArgsConstructor
 @CrossOrigin
 public class StaffController {
+
+//    http://localhost:8080/Staff/add
+
+
    final StafdService service;
 
    @PostMapping("/add")
