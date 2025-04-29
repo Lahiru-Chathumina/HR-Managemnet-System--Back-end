@@ -12,15 +12,13 @@ import lombok.ToString;
 @ToString
 @Entity
 
-@Table(name = "staff")
-public class StaffEntity {
+@Table(name = "hr")
+public class HREntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String name;
-    private String email;
-
     private String address;
     private Double salary;
 }

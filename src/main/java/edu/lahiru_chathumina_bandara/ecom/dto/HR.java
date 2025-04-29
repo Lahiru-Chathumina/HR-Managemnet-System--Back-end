@@ -1,6 +1,5 @@
-package edu.lahiru_chathumina_bandara.ecom.entity;
+package edu.lahiru_chathumina_bandara.ecom.dto;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,17 +9,9 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@Entity
-
-@Table(name = "staff")
-public class StaffEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class HR {
     private Integer id;
-
     private String name;
-    private String email;
-
     private String address;
     private Double salary;
 }

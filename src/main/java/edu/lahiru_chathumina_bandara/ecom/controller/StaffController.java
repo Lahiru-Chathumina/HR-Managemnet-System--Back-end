@@ -2,6 +2,7 @@ package edu.lahiru_chathumina_bandara.ecom.controller;
 
 import edu.lahiru_chathumina_bandara.ecom.dto.Staff;
 import edu.lahiru_chathumina_bandara.ecom.service.StafdService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +20,7 @@ public class StaffController {
    final StafdService service;
 
    @PostMapping("/add")
-   public void addStaff(@RequestBody Staff staff){
+   public void addHr(@RequestBody @Valid Staff staff){
        service.addStaff(staff);
 
    }
@@ -35,7 +36,7 @@ public class StaffController {
     }
 
     @PutMapping("/update")
-    public void updateStaff(@RequestBody Staff staff){
+    public void updateStaff(@RequestBody @Valid Staff staff){
         service.updateStaff(staff);
     }
 
